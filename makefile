@@ -8,8 +8,8 @@ TEXPLAIN     := $(patsubst %.md,%.md.latex.plain.tex,$(wildcard *.ur.md))
 TEXSTUDPLAIN := $(patsubst %.md,%.md.latex.stud.plain.tex,$(wildcard *.ur.md))
 TEXD         := $(patsubst %.md,%.md.latex.draft.tex,$(wildcard *.ur.md))
 TEXSTUDD     := $(patsubst %.md,%.md.latex.stud.draft.tex,$(wildcard *.ur.md))
-CSL          := https://raw.githack.com/maybegeek/ur-magnum-opus-csl/master/ur-magnum-opus-zotero.csl
-#CSL          := Template/CSL/ur-magnum-opus-zotero.csl
+#CSL          := https://raw.githack.com/maybegeek/ur-magnum-opus-csl/master/ur-magnum-opus-zotero.csl
+CSL          := Template/CSL/ur-magnum-opus-zotero.csl
 ODT          := $(patsubst %.md,%.md.odt,$(wildcard *.ur.md))
 ODTUR        := $(patsubst %.md,%.md.uni.odt,$(wildcard *.ur.md))
 HTM          := $(patsubst %.md,%.md.htm,$(wildcard *.ur.md))
@@ -31,7 +31,7 @@ define TEX_TMPL
 	--no-tex-ligatures --number-sections \
 	--biblio Quellen/Quellen.bib -Vlot -Vlof \
 	--template=Template/ur-magnum-opus-pandoc.tex \
-	Template/metadata.yaml --biblatex 
+	Template/metadata.yaml --biblatex
 endef
 define TEX_RM
 $(OUT)/*.aux $(OUT)/*.bbl $(OUT)/*.bcf $(OUT)/*.blg $(OUT)/*.lof $(OUT)/*.log $(OUT)/*.lot $(OUT)/*.out $(OUT)/*.run.xml $(OUT)/*.toc

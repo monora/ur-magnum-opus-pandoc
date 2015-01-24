@@ -18,7 +18,7 @@ ur-erstgut: 'Prof. Dr. Christian Wolff'
 ur-zweitgut: 'Prof. Dr. Rainer Hammwöhner'
 
 ## Hausarbeit
-ur-hausarbeit: TRUE
+ur-hausarbeit: FALSE
 ur-veranstaltung: 'Hausarbeit im Kurs: Digitale Welten'
 ur-dozent: 'Prof. Dr. Hans Wichtig'
 ur-semester: 'Sommersemester 2014'
@@ -26,7 +26,7 @@ ur-fachsemester: '3'
 ur-kombi: 'Medienwissenschaft (Informationswissenschaft/Medieninformatik)'
 ur-modul: 'M-05'
 
-## alle Qullen anzeigen
+## alle Quellen anzeigen
 nocite: TRUE
 ...
 
@@ -147,4 +147,3 @@ An der Zeit auch mal ein Bild zu verwenden.
 ![Logo der Universität Regensburg (jpg)](Bilder/ur-logo.jpg "Logo der Universität Regensburg")
 
 ![Logo der Universität Regensburg (pdf)](Bilder/ur-logo.pdf "Logo der Universität Regensburg")
-
